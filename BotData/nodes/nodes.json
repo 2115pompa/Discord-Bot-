@@ -1,0 +1,481 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "ping",
+      "guid": "56f98d43-967a-4f24-abfe-d85670441848",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "07ea50a9-f4b5-45af-9824-a43b3287581f"
+          ]
+        }
+      ],
+      "x": 107,
+      "y": 104
+    },
+    {
+      "type": "response",
+      "name": "Pong",
+      "guid": "07ea50a9-f4b5-45af-9824-a43b3287581f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "56f98d43-967a-4f24-abfe-d85670441848"
+        }
+      ],
+      "x": 283,
+      "y": 83,
+      "rtype": "Message",
+      "rsubtype": "Ping Message",
+      "formdata": [
+        "🏓 Pong: **$$ping$$**"
+      ],
+      "formnames": [
+        "pingMessage"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "b0af7110-f6aa-41f1-a0a7-47acdd7f1ec3",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "ee3d7ac4-dc41-4fbb-9e91-b6fb9ab15527"
+          ]
+        }
+      ],
+      "x": 112,
+      "y": 223,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "Embed Help All",
+      "guid": "ee3d7ac4-dc41-4fbb-9e91-b6fb9ab15527",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b0af7110-f6aa-41f1-a0a7-47acdd7f1ec3"
+        }
+      ],
+      "x": 284,
+      "y": 204,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "542C2C",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "🥳 **Komendy 4Fun**\n**.coinflip** - [Losuje liczbe]\n**.kpn** - [Gra W Kamien Papier Nozyce]\n**.zart** - [Opowiada Zart]\n**.mem** - [Wysyła Mema]\n🎎 **Komendy RolePlay**\n**.Pocałuj** - [Całuje Oznaczoną Osobe]\n**.Przytul**- [Przytula Oznaczoną Osobe]\n**.Uderz** - [Uderza Oznaczoną Osobe]\n💸 **Komendy Ekonomia**\n⚙ **Komendy Moderacyjne**\n🔞 **Komendy NSFW**\n🛠 **Komendy Bota**\n**.SerwerInfo** - [Informacje O Serwerze]\n**.BotInfo** - [Informacje O Bocie\n**.ping** - [Bot Wysyła Swój Ping]\n**.zaproszenie** - [Bot Wysyła Swoje Zaproszenie]\n**.uptime** - [Bot Wysyła Kiedy Się Włączył]\n\n",
+        "",
+        "",
+        "🐻 BearBot",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "uptime",
+      "guid": "00582500-f5b3-40d5-b572-e534a16e56fe",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "699c3a21-b64f-4e56-8d50-f586fa2403ac"
+          ]
+        }
+      ],
+      "x": 125,
+      "y": 322
+    },
+    {
+      "type": "response",
+      "name": "UpTime",
+      "guid": "699c3a21-b64f-4e56-8d50-f586fa2403ac",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "00582500-f5b3-40d5-b572-e534a16e56fe"
+        }
+      ],
+      "x": 292,
+      "y": 318,
+      "rtype": "Message",
+      "rsubtype": "Up Time",
+      "formdata": [
+        "⏱ Bot Działa: **$$days$$ Dni** **$$hours$$ Godzin** **$$minutes$$ Minut** **$$seconds$$ Sekund**"
+      ],
+      "formnames": [
+        "uptimemsg"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "zaproszenie",
+      "guid": "1a1b2b6a-b53a-46db-a1d7-e31e187a8a02",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "1e7494b0-75e5-460d-86d9-2aca05cc5094"
+          ]
+        }
+      ],
+      "x": 123,
+      "y": 440
+    },
+    {
+      "type": "response",
+      "name": "Zaproszenie Link",
+      "guid": "1e7494b0-75e5-460d-86d9-2aca05cc5094",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1a1b2b6a-b53a-46db-a1d7-e31e187a8a02"
+        }
+      ],
+      "x": 294,
+      "y": 428,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "0CFF00",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "**Oto Link Do Zaproszenia Mnie Na Twój Serwer**:https://ptb.discord.com/api/oauth2/authorize?client_id=785802662792658975&permissions=8&scope=bot ",
+        "",
+        "",
+        "🐻 Komenda Wywołana Przez:${dbsVars.CommandAuthor.user.tag}",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "SerwerInfo",
+      "guid": "581d7be2-6ad3-4caa-a1ae-2012c69cf40a",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "bb834234-0ee6-476b-baf7-5dfd7ebd0ef4"
+          ]
+        }
+      ],
+      "x": 122,
+      "y": 583,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "EmbedServerInfo",
+      "guid": "bb834234-0ee6-476b-baf7-5dfd7ebd0ef4",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "581d7be2-6ad3-4caa-a1ae-2012c69cf40a"
+        }
+      ],
+      "x": 293,
+      "y": 566,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "8A3636",
+        "Informacje O Serwerze",
+        "",
+        "",
+        "",
+        "",
+        "👑Twórca Serwera:${dbsVars.guild.owner}\n🏳 Region Serwera:${dbsVars.guild.region}\n👤 Ilość Osób:${dbsVars.guild.memberCount}\n",
+        "",
+        "",
+        "🐻 BearBot",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "BotInfo",
+      "guid": "fd911b93-cf19-4f31-a44d-77015530ad41",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "d068da5b-17bf-4a57-88c6-045bd9754bc3"
+          ]
+        }
+      ],
+      "x": 135,
+      "y": 712
+    },
+    {
+      "type": "response",
+      "name": "EmbedBot",
+      "guid": "d068da5b-17bf-4a57-88c6-045bd9754bc3",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fd911b93-cf19-4f31-a44d-77015530ad41"
+        }
+      ],
+      "x": 298,
+      "y": 697,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "7A85FF",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "🔧 • Twórca Bota: 2115 pompa vlog#2115\n\n⏱ • Data Stworzenia Bota: 8.12.2020\n\n💽 • Wersja Bota: 1.0\n\n💻 • Support Bota: ",
+        "",
+        "",
+        "🐻 BearBot",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "coinflip",
+      "guid": "8b648c65-ef9e-4848-b29f-a0f45061f48f",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9d09ff79-f558-4a46-9f93-637d218341f4"
+          ]
+        }
+      ],
+      "x": 133,
+      "y": 816
+    },
+    {
+      "type": "response",
+      "name": "CoinFlip Generator",
+      "guid": "9d09ff79-f558-4a46-9f93-637d218341f4",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "30ba8e3c-2d6f-4de0-8ff5-bfc32125f4ad"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8b648c65-ef9e-4848-b29f-a0f45061f48f"
+        }
+      ],
+      "x": 306,
+      "y": 813,
+      "rtype": "Variable",
+      "rsubtype": "Generate Random Number",
+      "formdata": [
+        "CoinFlip",
+        "1",
+        "2",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "min",
+        "max",
+        "saveVarType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "EmbedCoin",
+      "guid": "30ba8e3c-2d6f-4de0-8ff5-bfc32125f4ad",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "9d09ff79-f558-4a46-9f93-637d218341f4"
+        }
+      ],
+      "x": 475,
+      "y": 816,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "DDFF24",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Wyrzucona Liczba To: **${tempVars.CoinFlip1}**",
+        "",
+        "",
+        "🐻 BearBot",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "command": [
+    {
+      "name": "ping",
+      "actions": [
+        {
+          "name": "Pong",
+          "category": "Message",
+          "type": "Ping Message",
+          "pingmessage": "🏓 Pong: **$$ping$$**"
+        }
+      ]
+    },
+    {
+      "name": "help",
+      "perms": [],
+      "actions": [
+        {
+          "name": "Embed Help All",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "542C2C",
+          "title": "",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "🥳 **Komendy 4Fun**\n**.coinflip** - [Losuje liczbe]\n**.kpn** - [Gra W Kamien Papier Nozyce]\n**.zart** - [Opowiada Zart]\n**.mem** - [Wysyła Mema]\n🎎 **Komendy RolePlay**\n**.Pocałuj** - [Całuje Oznaczoną Osobe]\n**.Przytul**- [Przytula Oznaczoną Osobe]\n**.Uderz** - [Uderza Oznaczoną Osobe]\n💸 **Komendy Ekonomia**\n⚙ **Komendy Moderacyjne**\n🔞 **Komendy NSFW**\n🛠 **Komendy Bota**\n**.SerwerInfo** - [Informacje O Serwerze]\n**.BotInfo** - [Informacje O Bocie\n**.ping** - [Bot Wysyła Swój Ping]\n**.zaproszenie** - [Bot Wysyła Swoje Zaproszenie]\n**.uptime** - [Bot Wysyła Kiedy Się Włączył]\n\n",
+          "thumbnail": "",
+          "image": "",
+          "footer": "🐻 BearBot",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "uptime",
+      "actions": [
+        {
+          "name": "UpTime",
+          "category": "Message",
+          "type": "Up Time",
+          "uptimemsg": "⏱ Bot Działa: **$$days$$ Dni** **$$hours$$ Godzin** **$$minutes$$ Minut** **$$seconds$$ Sekund**"
+        }
+      ]
+    },
+    {
+      "name": "zaproszenie",
+      "actions": [
+        {
+          "name": "Zaproszenie Link",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "0CFF00",
+          "title": "",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "**Oto Link Do Zaproszenia Mnie Na Twój Serwer**:https://ptb.discord.com/api/oauth2/authorize?client_id=785802662792658975&permissions=8&scope=bot ",
+          "thumbnail": "",
+          "image": "",
+          "footer": "🐻 Komenda Wywołana Przez:${dbsVars.CommandAuthor.user.tag}",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "SerwerInfo",
+      "perms": [],
+      "actions": [
+        {
+          "name": "EmbedServerInfo",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "8A3636",
+          "title": "Informacje O Serwerze",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "👑Twórca Serwera:${dbsVars.guild.owner}\n🏳 Region Serwera:${dbsVars.guild.region}\n👤 Ilość Osób:${dbsVars.guild.memberCount}\n",
+          "thumbnail": "",
+          "image": "",
+          "footer": "🐻 BearBot",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "BotInfo",
+      "actions": [
+        {
+          "name": "EmbedBot",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "7A85FF",
+          "title": "",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "🔧 • Twórca Bota: 2115 pompa vlog#2115\n\n⏱ • Data Stworzenia Bota: 8.12.2020\n\n💽 • Wersja Bota: 1.0\n\n💻 • Support Bota: ",
+          "thumbnail": "",
+          "image": "",
+          "footer": "🐻 BearBot",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "coinflip",
+      "actions": [
+        {
+          "name": "CoinFlip Generator",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "varname": "CoinFlip",
+          "min": "1",
+          "max": "2",
+          "savevartype": "temp"
+        },
+        {
+          "name": "EmbedCoin",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "DDFF24",
+          "title": "",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Wyrzucona Liczba To: **${tempVars.CoinFlip1}**",
+          "thumbnail": "",
+          "image": "",
+          "footer": "🐻 BearBot",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    }
+  ]
+}
